@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.videocell_main {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+
+.videocell {
+  width: 740px;
+  height: 600px;
+  padding-right: 40px;
+}
+
+.big-word {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.small-word {
+  font-size: 26px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+button {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 138px;
+  height: 50px;
+  background-color: #53e797;
+  color: white;
+  border: none;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 10px;
+  display: flex;
+  margin-top: 120px;
+}
+
+.section {
+  margin-bottom: 50px;
+}
+
+.section input[id="slide"] {
+  display: none;
+}
+
+.section .slidewrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.section .slidelist {
+  white-space: nowrap;
+  font-size: 0;
+}
+
+.section .slidelist > li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.section .slidelist > li > a {
+  display: block;
+  position: relative;
+}
+
+.section .slidelist > li > a img {
+  width: 1000px;
+  height: 563px;
+}
+
+input[type="radio"] {
+  visibility: hidden;
+}
+
+.section .slidelist label {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 50px;
+  cursor: pointer;
+}
+
+.section .slidelist .left {
+  left: 10px;
+  background: url("../image/left.png") center center / 50% no-repeat;
+}
+
+.section .slidelist .right {
+  right: 10px;
+  background: url("../image/right.png") center center / 50% no-repeat;
+}
+
+.section [id="slide01"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(0%);
+}
+.section [id="slide02"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-100%);
+}
+.section [id="slide03"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-200%);
+}
+.section [id="slide04"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-300%);
+}
+.section [id="slide05"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-400%);
+}
+.section [id="slide06"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-500%);
+}
+.section [id="slide07"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-600%);
+}
+.section [id="slide08"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-700%);
+}
+
+.section .slide-control [class*="control"] {
+  display: none;
+}
+.section [id="control01"]:checked ~ .slidewrap .control01 {
+  display: block;
+}
+.section [id="control02"]:checked ~ .slidewrap .control02 {
+  display: block;
+}
+.section [id="control03"]:checked ~ .slidewrap .control03 {
+  display: block;
+}
+.section [id="control04"]:checked ~ .slidewrap .control04 {
+  display: block;
+}
+.section [id="control05"]:checked ~ .slidewrap .control05 {
+  display: block;
+}
+.section [id="control06"]:checked ~ .slidewrap .control06 {
+  display: block;
+}
+.section [id="control07"]:checked ~ .slidewrap .control07 {
+  display: block;
+}
+.section [id="control08"]:checked ~ .slidewrap .control08 {
+  display: block;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: none;
+
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal_body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 400px;
+  height: 600px;
+
+  padding: 40px;
+
+  text-align: center;
+
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.modal_img {
+  width: 170px;
+  height: 170px;
+}
+
+#roomNumber {
+  color: gray;
+  padding-top: 30px;
+  font-size: 20px;
+  display: flex;
+  padding-left: 32px;
+  width: 150px;
+  height: 55px;
+  text-align: center;
+  align-items: center;
+}
+
+#nickName {
+  margin-top: 20px;
+  color: gray;
+  font-size: 20px;
+  display: flex;
+  padding-left: 32px;
+  width: 150px;
+  height: 55px;
+  text-align: center;
+  align-items: center;
+}
+
+.mordalText {
+  margin-top: 10px;
+  border: none;
+  border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+  border-bottom: 1px solid gray;
+  width: 330px;
+  height: 30px;
+}
+
+#submitStyle {
+  margin-top: 50px;
+  width: 170px;
+  height: 60px;
+  border-radius: 15px;
+  background-color: #53e797;
+  color: white;
+  font-size: 24px;
+  border: none;
+}

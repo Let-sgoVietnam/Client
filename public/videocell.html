@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../stylesheet/videocell.css" />
+    <link rel="stylesheet" href="../stylesheet/header.css" />
+    <link rel="stylesheet" href="../stylesheet/footer.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>videocell</title>
+  </head>
+  <body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <div class="menu-bar" style="text-align: center">
+      <a id="logo_friend" href="home.html">프렌드</a>
+      <a href="home.html">홈</a>
+      <a class="video_logo" href="videocell.html">화상 통화</a>
+      <a href="message.html">메세지</a>
+    </div>
+    <div class="videocell_main" data-aos="fade-in" data-aos-delay="300">
+      <img class="videocell" src="../image/videocell.png" />
+      <div class="word">
+        <div class="big-word">
+          <a>전 세계 사람들과 소통하는 화상 통화</a><br />
+        </div>
+        <div class="small-word">
+          <a
+            ><b
+              >참여하기를 눌러 전 세계 사람들과 소통해보세요.<br />전 세계
+              사람들에게 한 발짝 다가가는 길입니다.</b
+            ></a
+          >
+        </div>
+        <button class="attend" href="">참여하기</button>
+      </div>
+    </div>
+    <div class="section" data-aos="fade-in" data-aos-delay="300">
+      <input type="radio" name="slide" id="slide01" checked />
+      <input type="radio" name="slide" id="slide02" />
+      <input type="radio" name="slide" id="slide03" />
+      <input type="radio" name="slide" id="slide04" />
+      <input type="radio" name="slide" id="slide05" />
+      <input type="radio" name="slide" id="slide06" />
+      <input type="radio" name="slide" id="slide07" />
+      <input type="radio" name="slide" id="slide08" />
+      <div class="slidewrap">
+        <ul class="slidelist">
+          <li>
+            <a>
+              <label for="slide08" class="left"></label>
+              <img src="../image/slide01.jpg" />
+              <label for="slide02" class="right"></label>
+            </a>
+          </li>
+          <li>
+            <a>
+              <label for="slide01" class="left"></label>
+              <img src="../image/slide02.jpg" />
+              <label for="slide03" class="right"></label>
+            </a>
+          </li>
+          <li>
+            <a>
+              <label for="slide02" class="left"></label>
+              <img src="../image/slide03.jpg" />
+              <label for="slide04" class="right"></label>
+            </a>
+          </li>
+          <li>
+            <a>
+              <label for="slide03" class="left"></label>
+              <img src="../image/slide04.jpg" />
+              <label for="slide05" class="right"></label>
+            </a>
+          </li>
+          <li>
+            <a>
+              <label for="slide04" class="left"></label>
+              <img src="../image/slide05.jpg" />
+              <label for="slide06" class="right"></label>
+            </a>
+          </li>
+          <li>
+            <a>
+              <label for="slide05" class="left"></label>
+              <img src="../image/slide06.jpg" />
+              <label for="slide07" class="right"></label>
+            </a>
+          </li>
+          <li>
+            <a>
+              <label for="slide06" class="left"></label>
+              <img src="../image/slide07.jpg" />
+              <label for="slide08" class="right"></label>
+            </a>
+          </li>
+          <li>
+            <a>
+              <label for="slide07" class="left"></label>
+              <img src="../image/slide08.png" />
+              <label for="slide01" class="right"></label>
+            </a>
+          </li>
+          <div class="slide-control">
+            <div class="control01">
+              <label for="slide08" class="left"></label>
+              <label for="slide02" class="right"></label>
+            </div>
+            <div class="control02">
+              <label for="slide01" class="left"></label>
+              <label for="slide03" class="right"></label>
+            </div>
+            <div class="control03">
+              <label for="slide02" class="left"></label>
+              <label for="slide04" class="right"></label>
+            </div>
+            <div class="control04">
+              <label for="slide03" class="left"></label>
+              <label for="slide05" class="right"></label>
+            </div>
+            <div class="control05">
+              <label for="slide04" class="left"></label>
+              <label for="slide06" class="right"></label>
+            </div>
+            <div class="control06">
+              <label for="slide05" class="left"></label>
+              <label for="slide07" class="right"></label>
+            </div>
+            <div class="control07">
+              <label for="slide06" class="left"></label>
+              <label for="slide08" class="right"></label>
+            </div>
+            <div class="control08">
+              <label for="slide07" class="left"></label>
+              <label for="slide01" class="right"></label>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <div class="modal">
+      <div class="modal_body">
+        <img src="../image/logo_connect.png" class="modal_img" />
+        <form action="/" method="post">
+          <span class="line"
+            ><p id="roomNumber">방 번호<br /></p
+          ></span>
+          <input class="mordalText" type="text" name="title" />
+          <p id="nickName">닉네임<br /></p>
+          <input class="mordalText" type="text" name="username" /><br />
+          <input id="submitStyle" type="submit" value="참여하기" />
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div class="footer_contents">
+          <img class="logo_connect" src="../image/logo_connect.png" />
+          <li class="friend_word">
+            프렌드는 대구소프트웨어마이스터고등학교에 재학 중인 학생들이 전 세계
+            사람들과 소통하기 위해 만든 웹 입니다.
+          </li>
+          <br />
+        </div>
+        <div class="friend_contents">
+          <ul>
+            <li class="jungbo">정보</li>
+            <br />
+            <li>
+              <a class="address" href="http://dgswhs.kr:8090/"
+                >대구소프트웨어마이스고등학교</a
+              >
+            </li>
+            <li>
+              <a
+                class="address"
+                href="https://www.google.com/maps/place/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EB%A7%88%EC%9D%B4%EC%8A%A4%ED%84%B0%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90/data=!4m5!3m4!1s0x356f59450095604b:0xdcee02065d82e483!8m2!3d35.6632493!4d128.4141269"
+                >위치 : 대구광역시 달성군 구지면 창리로11길 93</a
+              >
+            </li>
+            <li class="email">이메일: friend6@naver.com</li>
+            <li class="phonenumber">전화번호: 053-231-9240</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    const modal = document.querySelector(".modal");
+    const btnAttend = document.querySelector(".attend");
+
+    btnAttend.addEventListener("click", () => {
+      modal.style.display = "block";
+    });
+
+    window.addEventListener("click", (e) => {
+      e.target === modal ? (modal.style.display = "none") : "";
+    });
+  </script>
+</html>
