@@ -30,7 +30,7 @@
     padding-top: 20px;
 }
 
-button {
+.attend {
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -112,8 +112,6 @@ input[type="radio"] {
 .section [id="slide06"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-502.5%);}
 .section [id="slide07"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-603%);}
 .section [id="slide08"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-703.5%);}
-
-
 
 .Explanation{
     height: 70px;

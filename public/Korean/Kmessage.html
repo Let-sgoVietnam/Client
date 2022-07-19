@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../../stylesheet/header.css">
+    <link rel="stylesheet" href="../../stylesheet/message.css">
     <link rel="stylesheet" href="../../stylesheet/footer.css">
     <title>메세지</title>
 </head>  
@@ -24,6 +25,47 @@
             <option value="english">영어</option>
         </select>
     </div>
+    <div class="message_main" data-aos="fade-in" data-aos-delay="300">
+        <img class="message" src="../../image/message.png">
+        <div class="word">
+            <div class="big-word">
+                <a>전 세계 사람들과 소통하는 화상 통화</a><br>
+            </div>
+            <div class="small-word">
+                <a><b>참여하기를 눌러 전 세계 사람들과 소통해보세요.<br>전 세계 사람들에게 한 발짝 다가가는 길입니다.</b></a>
+            </div>
+            <button id="attend">참여하기</button>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal_body">
+          <img src="../../image/logo_connect.png" class="modal_img" />
+          <form action="/" method="post">
+            <span class="line"
+              ><p id="roomNumber">방 번호<br /></p
+            ></span>
+            <input class="mordalText" type="text" name="title" />
+            <p id="nickName">닉네임<br /></p>
+            <input class="mordalText" type="text" name="username" /><br />
+            <input id="submitStyle" type="submit" value="참여하기" />
+          </form>
+        </div>
+      </div>
+
+<script>
+    const modal = document.querySelector(".modal");
+    const btnAttend = document.getElementById('attend');
+
+    btnAttend.addEventListener("click", () => {
+      modal.style.display = "block";
+    });
+
+    window.addEventListener("click", (e) => {
+      e.target === modal ? (modal.style.display = "none") : "";
+    });
+</script>
+    
     <footer>
       <div class="footer">
           <div class="footer_contents">
