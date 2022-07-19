@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 130px;
-    margin-bottom: 130px;
+    margin-bottom: 80px;
 }
 
 .videocell {
@@ -62,7 +62,6 @@ button {
 
 .section .slidelist {
     white-space: nowrap;
-    font-size: 0;
 }
 
 .section .slidelist > li {
@@ -107,19 +106,22 @@ input[type="radio"] {
 
 .section [id="slide01"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
 .section [id="slide02"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
-.section [id="slide03"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
-.section [id="slide04"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
-.section [id="slide05"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-400%);}
-.section [id="slide06"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-500%);}
-.section [id="slide07"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-600%);}
-.section [id="slide08"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-700%);}
+.section [id="slide03"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-201%);}
+.section [id="slide04"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-301.5%);}
+.section [id="slide05"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-402%);}
+.section [id="slide06"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-502.5%);}
+.section [id="slide07"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-603%);}
+.section [id="slide08"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-703.5%);}
 
-.section .slide-control [class*="control"] {display: none;}
-.section [id="control01"]:checked ~ .slidewrap .control01 {display: block;}
-.section [id="control02"]:checked ~ .slidewrap .control02 {display: block;}
-.section [id="control03"]:checked ~ .slidewrap .control03 {display: block;}
-.section [id="control04"]:checked ~ .slidewrap .control04 {display: block;}
-.section [id="control05"]:checked ~ .slidewrap .control05 {display: block;}
-.section [id="control06"]:checked ~ .slidewrap .control06 {display: block;}
-.section [id="control07"]:checked ~ .slidewrap .control07 {display: block;}
-.section [id="control08"]:checked ~ .slidewrap .control08 {display: block;}
+
+
+.Explanation{
+    height: 70px;
+    width: 100%;
+    z-index:999;
+    font-size: 35px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

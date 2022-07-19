@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../stylesheet/header.css">
+    <link rel="stylesheet" href="../../stylesheet/footer.css">
+    <title>Message</title>
+</head>  
+<body>
+    <script>
+        const onChangeSelect = () => {  
+            let langSelect = document.querySelector(".language_button");  
+            let selectText = langSelect.options[langSelect.selectedIndex].text;  
+            if(selectText === "Korean") window.location.href = "file:///C:/Users/DGSW/OneDrive/%EB%AC%B8%EC%84%9C/GitHub/Hackthon_Vietnam-project/public/Korean/Kmessage.html"
+        }
+    </script>
+    <div class="menu-bar" style="text-align:center;">
+        <a id="logo_friend" href="Ehome.html">Friend</a>
+        <a href="Ehome.html">Home</a>
+        <a href="Evideocell.html">VideoCell</a>
+        <a class="message_logo" href="Emessage.html">Message</a>
+        <select name="language" class="language_button" onchange="onChangeSelect()">
+            <option value="english" selected>English</option>
+            <option value="korean">Korean</option>
+        </select>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="footer_contents">
+                <img class="logo_connect" src="../../image/logo_connect.png">
+                <li class="friend_word">Friend is a web created by students attending Daegu Software Meister High School to communicate with people around the world.</li><br>
+            </div>
+            <div class="friend_contents">
+                <ul>
+                    <li class="jungbo">Information</li><br>
+                    <li><a class="address" href="http://dgswhs.kr:8090/">Daegu Software Meister High School</a></li>
+                    <li><a class="address" href="https://www.google.com/maps/place/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EB%A7%88%EC%9D%B4%EC%8A%A4%ED%84%B0%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90/data=!4m5!3m4!1s0x356f59450095604b:0xdcee02065d82e483!8m2!3d35.6632493!4d128.4141269">Location: 93 Chang-ri 11-gil, Guji-myeon, Dalseong-gun, Daegu</a></li>
+                    <li class="email">email: friend7@naver.com</li>
+                    <li class="phonenumber">phonenumber: 053-231-9240</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

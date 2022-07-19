@@ -2,21 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../stylesheet/header.css">
-    <link rel="stylesheet" href="../stylesheet/footer.css">
-    <title>Message</title>
+    <link rel="stylesheet" href="../../stylesheet/header.css">
+    <link rel="stylesheet" href="../../stylesheet/footer.css">
+    <title>메세지</title>
 </head>  
 <body>
+    <script>
+        const onChangeSelect = () => {  
+            let langSelect = document.querySelector(".language_button");  
+            let selectText = langSelect.options[langSelect.selectedIndex].text;  
+            if(selectText === "영어") window.location.href = "file:///C:/Users/DGSW/OneDrive/%EB%AC%B8%EC%84%9C/GitHub/Hackthon_Vietnam-project/public/English/Emessage.html"
+        }
+    </script>
     <div class="menu-bar" style="text-align:center;">
-        <a id="logo_friend" href="home.html">프렌드</a>
-        <a href="home.html">홈</a>
-        <a href="videocell.html">화상 통화</a>
-        <a class="message_logo" href="message.html">메세지</a>
+        <a id="logo_friend" href="Khome.html">프렌드</a>
+        <a href="Khome.html">홈</a>
+        <a href="Kvideocell.html">화상 통화</a>
+        <a class="message_logo" href="Kmessage.html">메세지</a>
+        <select name="language" class="language_button" onchange="onChangeSelect()">
+            <option value="korean" selected>한국어</option>
+            <option value="english">영어</option>
+        </select>
     </div>
     <footer>
       <div class="footer">
           <div class="footer_contents">
-              <img class="logo_connect" src="../image/logo_connect.png">
+              <img class="logo_connect" src="../../image/logo_connect.png">
               <li class="friend_word">프렌드는 대구소프트웨어마이스터고등학교에 재학 중인 학생들이 전 세계 사람들과 소통하기 위해 만든 웹 입니다.</li><br>
           </div>
           <div class="friend_contents">
@@ -24,7 +35,7 @@
                   <li class="jungbo">정보</li><br>
                   <li><a class="address" href="http://dgswhs.kr:8090/">대구소프트웨어마이스고등학교</a></li>
                   <li><a class="address" href="https://www.google.com/maps/place/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EB%A7%88%EC%9D%B4%EC%8A%A4%ED%84%B0%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90/data=!4m5!3m4!1s0x356f59450095604b:0xdcee02065d82e483!8m2!3d35.6632493!4d128.4141269">위치 : 대구광역시 달성군 구지면 창리로11길 93</a></li>
-                  <li class="email">이메일: friend6@naver.com</li>
+                  <li class="email">이메일: friend7@naver.com</li>
                   <li class="phonenumber">전화번호: 053-231-9240</a></li>
               </ul>
           </div>
