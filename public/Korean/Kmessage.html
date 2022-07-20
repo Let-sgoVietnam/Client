@@ -12,7 +12,7 @@
         const onChangeSelect = () => {  
             let langSelect = document.querySelector(".language_button");  
             let selectText = langSelect.options[langSelect.selectedIndex].text;  
-            if(selectText === "영어") window.location.href = "file:///C:/Users/DGSW/OneDrive/%EB%AC%B8%EC%84%9C/GitHub/Hackthon_Vietnam-project/public/English/Emessage.html"
+            if(selectText === "영어") window.location.href = "file:///C:/Users/DGSW/OneDrive/%EB%AC%B8%EC%84%9C/GitHub/Let-sgo%20Vietnam/Client/public/English/Emessage.html"
         }
     </script>
     <div class="menu-bar" style="text-align:center;">
@@ -29,43 +29,64 @@
         <img class="message" src="../../image/message.png">
         <div class="word">
             <div class="big-word">
-                <a>전 세계 사람들과 소통하는 화상 통화</a><br>
+                <a>소중한 사람들과 추억을 쌓는 메세지</a><br>
             </div>
             <div class="small-word">
-                <a><b>참여하기를 눌러 전 세계 사람들과 소통해보세요.<br>전 세계 사람들에게 한 발짝 다가가는 길입니다.</b></a>
+                <a><b>참여하기를 눌러 소중한 사람들과 추억을 쌓아보세요.<br>소중한 사람한테 한 발짝 다가가는 길입니다.</b></a>
             </div>
             <button id="attend">참여하기</button>
         </div>
     </div>
-
     <div class="modal">
         <div class="modal_body">
           <img src="../../image/logo_connect.png" class="modal_img" />
           <form action="/" method="post">
-            <span class="line"
-              ><p id="roomNumber">방 번호<br /></p
-            ></span>
-            <input class="mordalText" type="text" name="title" />
+            <span class="line"><p id="roomNumber">방번호<br /></p></span>
+            <input class="mordalText" type="text" name="title" id="roomNum"/>
             <p id="nickName">닉네임<br /></p>
-            <input class="mordalText" type="text" name="username" /><br />
+            <input class="mordalText" type="text" name="username" id="name"/><br />
             <input id="submitStyle" type="submit" value="참여하기" />
           </form>
         </div>
-      </div>
+    </div>
+    <script>
+        const modal = document.querySelector(".modal");
+        const btnAttend = document.getElementById('attend');
 
-<script>
-    const modal = document.querySelector(".modal");
-    const btnAttend = document.getElementById('attend');
+        btnAttend.addEventListener("click", () => {
+        modal.style.display = "block";
+        });
 
-    btnAttend.addEventListener("click", () => {
-      modal.style.display = "block";
-    });
+        window.addEventListener("click", (e) => {
+        e.target === modal ? (modal.style.display = "none") : "";
+        });
 
-    window.addEventListener("click", (e) => {
-      e.target === modal ? (modal.style.display = "none") : "";
-    });
-</script>
-    
+        document.getElementById('roomNum').onfocus = roomClick;
+        function roomClick() {
+            document.getElementById('roomNumber').style.color = '#2bdc7d';
+            document.getElementById('roomNum').style.borderBottomColor = '#2bdc7d';
+        }
+        document.getElementById('roomNum').onblur = roomUnClick;
+        function roomUnClick() {
+            if(document.getElementById('roomNum').value === '') {
+                document.getElementById('roomNumber').style.color = 'gray';
+                document.getElementById('roomNum').style.borderBottomColor = 'gray';
+            }
+        }
+
+        document.getElementById('name').onfocus = nameClick;
+        function nameClick() {
+            document.getElementById('nickName').style.color = '#2bdc7d';
+            document.getElementById('name').style.borderBottomColor = '#2bdc7d';
+        }
+        document.getElementById('name').onblur = nameUnClick;
+        function nameUnClick() {
+            if(document.getElementById('name').value === '') {
+                document.getElementById('nickName').style.color = 'gray';
+                document.getElementById('name').style.borderBottomColor = 'gray';
+            }
+        }
+    </script>
     <footer>
       <div class="footer">
           <div class="footer_contents">
